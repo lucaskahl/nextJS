@@ -1,10 +1,14 @@
 import React from "react";
+import axios from "axios";
 
 import Link from "next/link";
-import axios from "axios";
+import Head from "next/head";
 
 const User = ({ users }) => (
   <div>
+    <Head>
+      <title>Usuários</title>
+    </Head>
     <h2>Usuários</h2>
     <ul>
       {users.map(user => (
